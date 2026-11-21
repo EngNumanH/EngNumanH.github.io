@@ -3,13 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eng.Numan | Mechanical & Automations Engineer</title>
+
+<title>Eng. Numan Haqqani</title>
 
 <style>
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     margin:0;
-    font-family:Segoe UI,Arial,sans-serif;
-    background:#0f172a;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:linear-gradient(135deg,#071428,#0b1f42);
     color:white;
 }
 
@@ -23,84 +29,189 @@ body{
     padding:20px;
 }
 
-h1{
-    font-size:4rem;
+.hero h1{
+    font-size:4.5rem;
     margin:0;
+    font-weight:700;
 }
 
-.tagline{
-    color:#94a3b8;
-    font-size:1.2rem;
+.hero p{
+    font-size:1.25rem;
+    color:#b3c2dd;
+    margin-top:15px;
 }
 
-.button{
-    margin-top:25px;
-    padding:12px 24px;
-    background:#2563eb;
+.nav-links{
+    margin-top:40px;
+    font-size:1.1rem;
+    line-height:2;
+}
+
+.nav-links a{
     color:white;
     text-decoration:none;
-    border-radius:8px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#4ea3ff;
+}
+
+.nav-links span{
+    color:#7185aa;
 }
 
 .section{
-    padding:80px 10%;
+    max-width:1000px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.section h2{
+    font-size:2.2rem;
+    border-bottom:2px solid #2563eb;
+    display:inline-block;
+    padding-bottom:10px;
+    margin-bottom:30px;
 }
 
 .card{
-    background:#1e293b;
-    padding:20px;
-    margin:15px 0;
-    border-radius:10px;
+    background:#122848;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 4px 20px rgba(0,0,0,.2);
 }
+
+.card h3{
+    margin-top:0;
+    color:#4ea3ff;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#8ca2c9;
+}
+
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-    <h1>Eng.Numan</h1>
-    <p class="tagline">
+
+    <h1>Eng. Numan Haqqani</h1>
+
+    <p>
         CAD Engineer | FPSO | Offshore Engineering | Design Automation
     </p>
 
-    <a class="button" href="#projects">View Projects</a>
+    <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <span>|</span>
+
+        <a href="#projects">Projects</a>
+        <span>|</span>
+
+        <a href="#awards">Awards</a>
+        <span>|</span>
+
+        <a href="#publications">Publications</a>
+        <span>|</span>
+
+        <a href="#education">Education</a>
+    </div>
+
 </section>
 
-<section class="section">
-    <h2>About Me</h2>
+<section id="experience" class="section">
 
-    <p>
-        I'm Numan Haqqani, a CAD Engineer based in Abu Dhabi.
-        My expertise includes FPSO engineering, CAD design,
-        heavy lift studies, Autodesk Inventor, Vault,
-        AutoCAD and engineering automation.
-    </p>
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>CAD Engineer</h3>
+        <p>
+            Abu Dhabi, UAE
+        </p>
+
+        <p>
+            Experienced in FPSO engineering, lifting studies,
+            Autodesk Inventor, Vault, AutoCAD and design automation.
+        </p>
+    </div>
+
 </section>
 
-<section class="section" id="projects">
+<section id="projects" class="section">
+
     <h2>Projects</h2>
 
     <div class="card">
         <h3>FPSO Module Engineering</h3>
-        <p>3D model development and design coordination.</p>
+        <p>
+            3D model development, design coordination and engineering support.
+        </p>
     </div>
 
     <div class="card">
         <h3>Heavy Lift Studies</h3>
-        <p>Crane reach and capacity assessments.</p>
+        <p>
+            Crane reach analysis, lifting assessments and installation planning.
+        </p>
     </div>
 
     <div class="card">
         <h3>CAD Automation</h3>
-        <p>iLogic and scripting solutions.</p>
+        <p>
+            Development of iLogic, Inventor and engineering automation tools.
+        </p>
     </div>
+
 </section>
 
-<section class="section">
-    <h2>Contact</h2>
-    <p>LinkedIn: Add Your Profile</p>
-    <p>Email: Add Your Email</p>
+<section id="awards" class="section">
+
+    <h2>Awards</h2>
+
+    <div class="card">
+        <p>
+            Add your professional awards, recognitions and achievements here.
+        </p>
+    </div>
+
 </section>
+
+<section id="publications" class="section">
+
+    <h2>Publications</h2>
+
+    <div class="card">
+        <p>
+            Add research papers, technical articles, conference proceedings,
+            patents or engineering publications here.
+        </p>
+    </div>
+
+</section>
+
+<section id="education" class="section">
+
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>Bachelor of Mechanical Engineering</h3>
+        <p>
+            Add university name and graduation year.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Eng. Numan Haqqani
+</footer>
 
 </body>
 </html>
