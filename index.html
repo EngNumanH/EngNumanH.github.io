@@ -9,11 +9,11 @@
   <meta property="og:description" content="Mechanical design, offshore engineering, manufacturing and automation.">
   <meta property="og:type" content="website">
   <title>Numan Haqqani | Engineering Portfolio</title>
- 
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
- 
+
   <style>
     :root {
       --bg: #070b18;
@@ -30,7 +30,7 @@
       --radius: 18px;
       --shadow: 0 24px 70px rgba(0, 0, 0, .28);
     }
- 
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 92px; }
     body {
@@ -69,7 +69,7 @@
       background: linear-gradient(100deg, #f5f8ff 8%, #75baff 55%, #72e5e8 100%);
       -webkit-background-clip: text; background-clip: text; color: transparent;
     }
- 
+
     /* Navigation */
     .site-header {
       position: fixed; inset: 0 0 auto; z-index: 50;
@@ -104,7 +104,7 @@
       display: none; background: transparent; border: 1px solid var(--line);
       color: var(--text); border-radius: 10px; padding: 9px 12px; cursor: pointer;
     }
- 
+
     /* Buttons */
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 10px;
@@ -119,7 +119,7 @@
     }
     .btn-ghost { border-color: rgba(148,177,221,.28); color: var(--text); background: rgba(255,255,255,.025); }
     .btn-ghost:hover { border-color: var(--cyan); box-shadow: 0 10px 28px rgba(98,227,232,.08); }
- 
+
     /* Hero */
     .hero {
       min-height: 100svh; display: grid; align-items: center; position: relative;
@@ -139,7 +139,7 @@
     .hero-meta { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 34px; color: var(--muted); font: .72rem "DM Mono", monospace; }
     .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
     .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
- 
+
     .portrait-wrap { position: relative; width: min(100%, 390px); justify-self: end; }
     .portrait-frame {
       position: relative; aspect-ratio: 4 / 5; padding: 10px; border-radius: 28px;
@@ -170,7 +170,7 @@
     }
     .floating-card strong { display: block; font-size: .9rem; }
     .floating-card span { color: var(--muted); font: .65rem "DM Mono", monospace; }
- 
+
     /* Sections */
     section.content-section { padding: 105px 0; position: relative; }
     .section-heading { max-width: 720px; margin-bottom: 42px; }
@@ -178,7 +178,7 @@
     .section-heading p { color: var(--muted); margin: 0; }
     .section-topline { display: flex; align-items: center; gap: 13px; }
     .section-topline::after { content: ""; width: 65px; height: 1px; background: linear-gradient(90deg, var(--cyan), transparent); }
- 
+
     /* About */
     .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 42px; align-items: start; }
     .about-copy { color: var(--muted); }
@@ -193,7 +193,7 @@
     .focus-icon { color: var(--cyan); font-size: 1.15rem; }
     .focus-card h3 { margin: 9px 0 3px; font-size: .91rem; }
     .focus-card p { margin: 0; color: var(--muted); font-size: .76rem; }
- 
+
     /* Experience */
     .timeline { display: grid; gap: 17px; }
     .timeline-card { padding: 25px 27px; position: relative; overflow: hidden; }
@@ -208,7 +208,7 @@
     .timeline-card p { color: var(--muted); margin: 14px 0 10px; font-size: .88rem; }
     .bullet-list { margin: 8px 0 0; padding-left: 18px; color: #c0cce0; font-size: .84rem; }
     .bullet-list li { padding: 3px 0; }
- 
+
     /* Projects */
     .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
     .project-card { overflow: hidden; transition: transform .3s ease, border-color .3s ease; }
@@ -227,5 +227,469 @@
     .project-symbol { z-index: 1; font-size: 2.7rem; color: var(--cyan); text-shadow: 0 0 28px rgba(98,227,232,.45); }
     .project-content { padding: 23px; }
     .project-content h3 { margin: 10px 0 8px; font-size: 1.1rem; }
-    .pro
- 
+    .project-content p { color: var(--muted); font-size: .84rem; margin: 0 0 15px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { color: #b8d7f6; font-size: .65rem; border: 1px solid rgba(85,167,255,.2); background: rgba(85,167,255,.07); border-radius: 100px; padding: 5px 9px; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .skill-group { padding: 21px; }
+    .skill-group h3 { margin: 0 0 13px; font-size: .95rem; }
+    .skill-group p { margin: 0; color: var(--muted); font-size: .82rem; }
+
+    /* Achievements & publications */
+    .achievement-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .achievement-card { padding: 21px; }
+    .achievement-card .metric { color: var(--cyan); font: 1.55rem "DM Mono", monospace; }
+    .achievement-card h3 { font-size: .9rem; margin: 9px 0 5px; }
+    .achievement-card p { color: var(--muted); font-size: .78rem; margin: 0; }
+    .publication-list { display: grid; gap: 12px; }
+    .publication {
+      padding: 20px 22px; border: 1px solid var(--line); border-radius: 14px;
+      background: rgba(16,27,49,.55);
+    }
+    .publication h3 { margin: 0 0 6px; font-size: .95rem; }
+    .publication p { color: var(--muted); margin: 0; font-size: .8rem; }
+
+    /* Education / contact */
+    .education-panel { padding: 27px; }
+    .education-panel h3 { margin: 0; }
+    .education-panel p { color: var(--muted); margin: 6px 0; }
+    .contact-panel {
+      padding: clamp(25px, 5vw, 52px); border: 1px solid rgba(98,227,232,.25);
+      border-radius: 24px; background: radial-gradient(circle at 90% 10%, rgba(85,167,255,.15), transparent 35%), var(--panel);
+      display: flex; align-items: center; justify-content: space-between; gap: 30px;
+    }
+    .contact-panel h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -.05em; margin: 7px 0; }
+    .contact-panel p { color: var(--muted); margin: 0; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    footer { padding: 28px 0 38px; color: #74839e; font: .7rem "DM Mono", monospace; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+
+    /* Motion */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s cubic-bezier(.2,.7,.2,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .1s; } .delay-2 { transition-delay: .2s; } .delay-3 { transition-delay: .3s; }
+    .orb {
+      position: absolute; width: 360px; height: 360px; border-radius: 50%; pointer-events: none;
+      background: rgba(55,133,220,.09); filter: blur(70px); animation: drift 10s ease-in-out infinite alternate;
+    }
+    .orb.one { top: 10%; right: -170px; } .orb.two { bottom: -20%; left: -230px; background: rgba(130,95,220,.08); animation-delay: -4s; }
+    @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(-35px,25px,0); } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr .72fr; gap: 35px; }
+      .floating-card { left: -22px; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .achievement-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { gap: 15px; }
+    }
+    @media (max-width: 700px) {
+      .container { width: min(100% - 34px, var(--max)); }
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        display: none; position: absolute; top: 68px; left: 17px; right: 17px;
+        padding: 16px; border: 1px solid var(--line); border-radius: 14px;
+        background: rgba(8,14,29,.97); backdrop-filter: blur(18px);
+        flex-direction: column; align-items: stretch; gap: 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 11px 8px; }
+      .nav .btn { display: none; }
+      .hero { padding-top: 120px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 45px; }
+      .hero-copy { order: 1; }
+      .portrait-wrap { order: 0; justify-self: start; width: min(68%, 260px); margin-left: 12px; }
+      .portrait-frame { transform: none; }
+      .floating-card { left: auto; right: -65px; bottom: 18px; }
+      section.content-section { padding: 76px 0; }
+      .about-grid { grid-template-columns: 1fr; }
+      .project-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .contact-panel { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 430px) {
+      .skills-grid, .achievement-grid { grid-template-columns: 1fr; }
+      .timeline-top { flex-direction: column; gap: 5px; }
+      .hero h1 { font-size: 3.25rem; }
+      .hero-meta { gap: 12px; }
+      .focus-grid { gap: 9px; }
+      .focus-card { padding: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Numan Haqqani home">
+        <span class="brand-mark">NH</span><span>NUMAN HAQQANI<span class="accent">.</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#research">Research</a>
+      </div>
+      <a class="btn btn-ghost" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="orb one"></div><div class="orb two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Mechanical Engineer <span class="accent">//</span> United Arab Emirates</div>
+          <h1>Numan<br><span class="gradient-text">Haqqani.</span></h1>
+          <div class="hero-role">Engineering Design. Innovation. Automation.</div>
+          <p class="hero-description">
+            Mechanical Engineer working across offshore engineering, mechanical design and manufacturing.
+            Interested in turning complex engineering challenges into practical, buildable solutions through
+            design, analysis and automation.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-ghost" href="assets/Numan_Haqqani_CV.pdf" target="_blank" rel="noopener">View CV <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="status-dot"></i> UAE-based engineer</span>
+            <span>CAD / DESIGN / SYSTEMS</span>
+          </div>
+        </div>
+
+        <div class="portrait-wrap reveal">
+          <div class="portrait-frame">
+            <!-- Add your portrait at assets/numan-profile.jpg. Remove the placeholder div when ready. -->
+            <img class="portrait" src="assets/numan-profile.jpg" alt="Professional portrait of Numan Haqqani"
+                 onerror="this.style.display='none'; document.getElementById('portraitFallback').style.display='grid';">
+            <div class="portrait-placeholder" id="portraitFallback">
+              <div><strong>Your professional photo</strong><small>ADD: assets/numan-profile.jpg</small></div>
+            </div>
+          </div>
+          <div class="floating-card">
+            <strong>Design → Analyse → Deliver</strong>
+            <span>ENGINEERING MINDSET</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">01 / About</div>
+          <h2>Curious by nature.<br><span class="gradient-text">Engineer by discipline.</span></h2>
+          <p>A multidisciplinary foundation spanning design, offshore projects, manufacturing and applied research.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am a Mechanical Engineering graduate from <strong>Abu Dhabi University</strong>, with professional
+              experience in offshore energy and manufacturing environments. My work has involved CAD development,
+              structural and fabrication documentation, installation engineering support and process improvement.
+            </p>
+            <p>
+              I enjoy working at the intersection of <strong>mechanical design, engineering analysis and automation</strong>.
+              I am particularly interested in the development of practical systems — from early concepts and digital
+              models through to manufacturing, integration and delivery.
+            </p>
+            <p>
+              Alongside industry work, I have contributed to research in applied engineering and emerging technologies.
+              I continue to build my capabilities in simulation, programming and project execution.
+            </p>
+          </div>
+          <div class="focus-grid reveal delay-1">
+            <article class="focus-card"><div class="focus-icon">⌘</div><h3>Mechanical Design</h3><p>3D modelling, drawings and design for manufacture.</p></article>
+            <article class="focus-card"><div class="focus-icon">◈</div><h3>Offshore Engineering</h3><p>Installation support, lifting studies and structures.</p></article>
+            <article class="focus-card"><div class="focus-icon">⟐</div><h3>Manufacturing</h3><p>Tooling, process improvement and production systems.</p></article>
+            <article class="focus-card"><div class="focus-icon">⌁</div><h3>Automation & Analysis</h3><p>Engineering tools, simulation and data-driven methods.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">02 / Experience</div>
+          <h2>Where engineering<br><span class="gradient-text">meets execution.</span></h2>
+          <p>Selected professional experience across offshore energy, advanced manufacturing and mechanical design.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div><h3>Design Engineer – CAD</h3><div class="company">Boskalis Westminster · Offshore Energy</div></div>
+              <div class="date">OCT 2024 — PRESENT</div>
+            </div>
+            <p>Supporting offshore energy projects through CAD development, engineering documentation and installation-related design work.</p>
+            <ul class="bullet-list">
+              <li>Developing 2D/3D models, fabrication drawings, bills of materials and installation visualisations.</li>
+              <li>Contributing to offshore wind projects including Sunrise Wind, Revolution Wind, Baltic Power and East Anglia Three.</li>
+              <li>Supporting tender and project engineering activities involving lifting, structural arrangements and installation scenarios.</li>
+              <li>Applying GD&T and relevant marine/offshore engineering requirements in design deliverables.</li>
+            </ul>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div><h3>Mechanical Design Engineering Intern</h3><div class="company">EDGE Group · LIF</div></div>
+              <div class="date">2025</div>
+            </div>
+            <p>Contributed to an Industry 4.0 assembly and automated storage concept, with a focus on mechanical design and manufacturing integration.</p>
+            <ul class="bullet-list">
+              <li>Developed mechanical design concepts using DFM/DFA and GD&T principles.</li>
+              <li>Supported an automated storage and retrieval system and assembly-line improvement initiative.</li>
+              <li>Contributed to process optimisation work targeting reductions in process time, power use and operational steps.</li>
+            </ul>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="timeline-top">
+              <div><h3>Manufacturing Engineer Intern</h3><div class="company">STRATA Manufacturing</div></div>
+              <div class="date">JAN — APR 2024</div>
+            </div>
+            <p>Supported manufacturing engineering activities related to Airbus A330 spoiler tooling and live production processes.</p>
+            <ul class="bullet-list">
+              <li>Worked on masking and transportation tooling within an active assembly environment.</li>
+              <li>Contributed to process improvements that reduced paint application time by approximately 63% and masking time by approximately 40%.</li>
+              <li>Used SAP and collaborated with manufacturing stakeholders to support production activities.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">03 / Selected work</div>
+          <h2>Engineering in<br><span class="gradient-text">action.</span></h2>
+          <p>A selection of industry, academic and independent engineering work. Public details are intentionally kept high-level.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-symbol">⌁</div></div>
+            <div class="project-content">
+              <div class="eyebrow">OFFSHORE ENERGY</div>
+              <h3>Offshore Wind Installation Engineering</h3>
+              <p>CAD development and engineering documentation supporting offshore wind installation projects, including structural arrangements, fabrication deliverables and installation visualisations.</p>
+              <div class="tag-row"><span class="tag">Autodesk Inventor</span><span class="tag">AutoCAD</span><span class="tag">GD&T</span><span class="tag">Offshore</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-visual"><div class="project-symbol">▦</div></div>
+            <div class="project-content">
+              <div class="eyebrow">INDUSTRY 4.0</div>
+              <h3>Automated Storage & Assembly Systems</h3>
+              <p>Mechanical design and manufacturing integration for an automated storage and retrieval concept, with attention to assembly flow, maintainability and process efficiency.</p>
+              <div class="tag-row"><span class="tag">Mechanical Design</span><span class="tag">DFM / DFA</span><span class="tag">Lean</span><span class="tag">PLM</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-symbol">⌗</div></div>
+            <div class="project-content">
+              <div class="eyebrow">ENGINEERING AUTOMATION</div>
+              <h3>Crane Curve & CAD Workflow Tools</h3>
+              <p>Developing calculation and automation utilities to streamline repetitive engineering tasks and support more efficient drawing preparation and technical workflows.</p>
+              <div class="tag-row"><span class="tag">Python</span><span class="tag">Inventor</span><span class="tag">iLogic</span><span class="tag">Automation</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-visual"><div class="project-symbol">⌖</div></div>
+            <div class="project-content">
+              <div class="eyebrow">ROBOTICS / CONCEPT DEVELOPMENT</div>
+              <h3>Autonomous Drone & Rover Concept</h3>
+              <p>Exploring an integrated aerial and ground robotics concept for agricultural and environmental surveying, with mechanical integration and autonomous operation as key themes.</p>
+              <div class="tag-row"><span class="tag">Robotics</span><span class="tag">Mechanical Systems</span><span class="tag">Surveying</span><span class="tag">R&D</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual"><div class="project-symbol">◉</div></div>
+            <div class="project-content">
+              <div class="eyebrow">AEROSPACE MANUFACTURING</div>
+              <h3>Aircraft Spoiler Manufacturing Tooling</h3>
+              <p>Manufacturing internship work focused on tooling, masking and transportation aids for an aircraft spoiler production environment.</p>
+              <div class="tag-row"><span class="tag">Tooling</span><span class="tag">Production</span><span class="tag">Process Improvement</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-visual"><div class="project-symbol">⌬</div></div>
+            <div class="project-content">
+              <div class="eyebrow">APPLIED RESEARCH</div>
+              <h3>Engineering Research & Innovation</h3>
+              <p>Academic research contributions exploring technology applications including agricultural monitoring, autonomous systems and engineering solutions.</p>
+              <div class="tag-row"><span class="tag">Research</span><span class="tag">Prototyping</span><span class="tag">Innovation</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">04 / Capabilities</div>
+          <h2>Tools, methods<br><span class="gradient-text">& technical foundation.</span></h2>
+          <p>A practical toolkit built through academic work, industry projects and continuous learning.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group reveal"><h3>CAD & Product Design</h3><p>Autodesk Inventor · AutoCAD · Fusion 360 · Autodesk Vault · 3D modelling · Assembly design · Technical drawings</p></article>
+          <article class="skill-group reveal delay-1"><h3>Engineering Analysis</h3><p>ANSYS Mechanical · ANSYS CFD · FEA · CFD · MATLAB · Simulink · Engineering calculations</p></article>
+          <article class="skill-group reveal delay-2"><h3>Programming & Automation</h3><p>Python · C++ · iLogic · Design automation · Calculation tools · Workflow improvement</p></article>
+          <article class="skill-group reveal"><h3>Manufacturing</h3><p>DFM/DFA · GD&T · CNC · Additive manufacturing · Prototyping · Tooling · Process improvement</p></article>
+          <article class="skill-group reveal delay-1"><h3>Engineering Methods</h3><p>Lean Six Sigma · Root-cause analysis · Technical documentation · BOM · Design reviews</p></article>
+          <article class="skill-group reveal delay-2"><h3>Digital & Business Systems</h3><p>SAP · PLM · Microsoft Office · Data handling · Engineering coordination</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="recognition">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">05 / Recognition</div>
+          <h2>Milestones &<br><span class="gradient-text">achievements.</span></h2>
+          <p>Selected academic, professional and continuous-learning milestones.</p>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card reveal"><div class="metric">1st</div><h3>UAE Undergraduate Research & Innovation</h3><p>First-place recognition for undergraduate research and innovation.</p></article>
+          <article class="achievement-card reveal delay-1"><div class="metric">Grand Prize</div><h3>IEG Oman</h3><p>Recognition for research and innovation contribution.</p></article>
+          <article class="achievement-card reveal delay-2"><div class="metric">2021–24</div><h3>Academic Excellence</h3><p>Excellence certificates during Mechanical Engineering studies.</p></article>
+          <article class="achievement-card reveal"><div class="metric">LSSYB</div><h3>Lean Six Sigma Yellow Belt</h3><p>Certification completed; building further process-improvement capability.</p></article>
+          <article class="achievement-card reveal delay-1"><div class="metric">BB</div><h3>Lean Six Sigma Black Belt</h3><p>Professional development currently in progress.</p></article>
+          <article class="achievement-card reveal delay-2"><div class="metric">3×</div><h3>Professional Merit Increments</h3><p>Merit-based recognition during professional experience.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="research">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">06 / Research & publications</div>
+          <h2>Exploring ideas<br><span class="gradient-text">beyond the workplace.</span></h2>
+          <p>Research contributions and collaborative academic work.</p>
+        </div>
+        <div class="publication-list">
+          <article class="publication reveal">
+            <h3>Research on MH370</h3>
+            <p>Contributed to a Springer-published 2026 book chapter. Add the exact chapter title, co-author list and DOI or publisher link before publishing.</p>
+          </article>
+          <article class="publication reveal delay-1">
+            <h3>Application of Drones and Rovers in Oil Palm Operations</h3>
+            <p>Contributed to a 2026 Springer book chapter exploring the use of aerial and ground robotic platforms in agricultural operations. Add the official publication link and full citation.</p>
+          </article>
+          <article class="publication reveal delay-2">
+            <h3>Additional Engineering Research</h3>
+            <p>Research interests include agricultural technology, autonomous systems, renewable-energy applications and practical engineering innovation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-topline eyebrow">07 / Education</div>
+          <h2>Academic foundation.</h2>
+        </div>
+        <div class="panel education-panel reveal">
+          <div class="eyebrow">BACHELOR'S DEGREE</div>
+          <h3>Bachelor of Science in Mechanical Engineering</h3>
+          <p>Abu Dhabi University · Al Ain, UAE</p>
+          <p>Graduated June 2024 · GPA: 3.8 / 4.0</p>
+          <p>Academic Excellence Certificates: 2021–2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <div class="eyebrow">08 / Contact</div>
+            <h2>Let's build something<br><span class="gradient-text">meaningful.</span></h2>
+            <p>Open to connecting with engineering professionals, collaborators and organisations working on challenging technical problems.</p>
+            <div class="contact-links">
+              <!-- Replace the placeholder links below with your real profile URLs. -->
+              <a class="btn btn-primary" href="mailto:YOUR.EMAIL@example.com">Email me ↗</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> NUMAN HAQQANI · ENGINEERING PORTFOLIO</span>
+      <span>DESIGNED WITH PRECISION <span class="accent">+</span> CURIOSITY</span>
+    </div>
+  </footer>
+
+  <script>
+    // Header glass effect
+    const header = document.getElementById("siteHeader");
+    const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 24);
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    updateHeader();
+
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Scroll reveal, with a graceful fallback for reduced motion / older browsers
+    const revealItems = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach(item => observer.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add("visible"));
+    }
+
+    // Highlight the current navigation section
+    const sections = document.querySelectorAll("main section[id]");
+    const navItems = document.querySelectorAll(".nav-links a");
+    if ("IntersectionObserver" in window) {
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navItems.forEach(link => {
+              link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+            });
+          }
+        });
+      }, { rootMargin: "-35% 0px -55% 0px" });
+      sections.forEach(section => sectionObserver.observe(section));
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
