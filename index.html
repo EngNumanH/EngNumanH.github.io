@@ -1,217 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Eng. Numan Haqqani</title>
-
-<style>
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
-    background:linear-gradient(135deg,#071428,#0b1f42);
-    color:white;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-
-.hero h1{
-    font-size:4.5rem;
-    margin:0;
-    font-weight:700;
-}
-
-.hero p{
-    font-size:1.25rem;
-    color:#b3c2dd;
-    margin-top:15px;
-}
-
-.nav-links{
-    margin-top:40px;
-    font-size:1.1rem;
-    line-height:2;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    color:#4ea3ff;
-}
-
-.nav-links span{
-    color:#7185aa;
-}
-
-.section{
-    max-width:1000px;
-    margin:auto;
-    padding:80px 30px;
-}
-
-.section h2{
-    font-size:2.2rem;
-    border-bottom:2px solid #2563eb;
-    display:inline-block;
-    padding-bottom:10px;
-    margin-bottom:30px;
-}
-
-.card{
-    background:#122848;
-    border-radius:12px;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow:0 4px 20px rgba(0,0,0,.2);
-}
-
-.card h3{
-    margin-top:0;
-    color:#4ea3ff;
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#8ca2c9;
-}
-
-</style>
-</head>
-
-<body>
-
-<section class="hero">
-
-    <h1>Eng. Numan Haqqani</h1>
-
-    <p>
-        CAD Engineer | FPSO | Offshore Engineering | Design Automation
-    </p>
-
-    <div class="nav-links">
-        <a href="#experience">Experience</a>
-        <span>|</span>
-
-        <a href="#projects">Projects</a>
-        <span>|</span>
-
-        <a href="#awards">Awards</a>
-        <span>|</span>
-
-        <a href="#publications">Publications</a>
-        <span>|</span>
-
-        <a href="#education">Education</a>
-    </div>
-
-</section>
-
-<section id="experience" class="section">
-
-    <h2>Experience</h2>
-
-    <div class="card">
-        <h3>CAD Engineer</h3>
-        <p>
-            Abu Dhabi, UAE
-        </p>
-
-        <p>
-            Experienced in FPSO engineering, lifting studies,
-            Autodesk Inventor, Vault, AutoCAD and design automation.
-        </p>
-    </div>
-
-</section>
-
-<section id="projects" class="section">
-
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>FPSO Module Engineering</h3>
-        <p>
-            3D model development, design coordination and engineering support.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Heavy Lift Studies</h3>
-        <p>
-            Crane reach analysis, lifting assessments and installation planning.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>CAD Automation</h3>
-        <p>
-            Development of iLogic, Inventor and engineering automation tools.
-        </p>
-    </div>
-
-</section>
-
-<section id="awards" class="section">
-
-    <h2>Awards</h2>
-
-    <div class="card">
-        <p>
-            Add your professional awards, recognitions and achievements here.
-        </p>
-    </div>
-
-</section>
-
-<section id="publications" class="section">
-
-    <h2>Publications</h2>
-
-    <div class="card">
-        <p>
-            Add research papers, technical articles, conference proceedings,
-            patents or engineering publications here.
-        </p>
-    </div>
-
-</section>
-
-<section id="education" class="section">
-
-    <h2>Education</h2>
-
-    <div class="card">
-        <h3>Bachelor of Mechanical Engineering</h3>
-        <p>
-            Add university name and graduation year.
-        </p>
-    </div>
-
-</section>
-
-<footer>
-    © 2026 Eng. Numan Haqqani
-</footer>
-
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b18">
+  <meta name="description" content="Numan Haqqani — Mechanical Engineer focused on mechanical design, offshore engineering, manufacturing systems, simulation and engineering automation.">
+  <meta property="og:title" content="Numan Haqqani | Engineering Portfolio">
+  <meta property="og:description" content="Mechanical design, offshore engineering, manufacturing and automation.">
+  <meta property="og:type" content="website">
+  <title>Numan Haqqani | Engineering Portfolio</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+  <style>
+    :root {
+      --bg: #070b18;
+      --bg-soft: #0b1224;
+      --panel: rgba(16, 27, 49, .78);
+      --panel-solid: #101b31;
+      --line: rgba(148, 177, 221, .16);
+      --text: #f3f7ff;
+      --muted: #a1aec5;
+      --blue: #55a7ff;
+      --cyan: #62e3e8;
+      --purple: #a78bfa;
+      --max: 1160px;
+      --radius: 18px;
+      --shadow: 0 24px 70px rgba(0, 0, 0, .28);
+    }
+ 
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 80% 4%, rgba(39, 105, 190, .18), transparent 34rem),
+        radial-gradient(ellipse at 5% 35%, rgba(63, 54, 150, .13), transparent 30rem),
+        var(--bg);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: .18;
+      background-image: linear-gradient(rgba(120,160,220,.07) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(120,160,220,.07) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(var(--max), calc(100% - 44px)); margin-inline: auto; }
+    .mono, .eyebrow, .tag, .nav-label, .metric-label { font-family: "DM Mono", monospace; }
+    .eyebrow {
+      color: var(--cyan); text-transform: uppercase; letter-spacing: .18em;
+      font-size: .74rem; font-weight: 500;
+    }
+    .accent { color: var(--cyan); }
+    .gradient-text {
+      background: linear-gradient(100deg, #f5f8ff 8%, #75baff 55%, #72e5e8 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+ 
+    /* Navigation */
+    .site-header {
+      position: fixed; inset: 0 0 auto; z-index: 50;
+      border-bottom: 1px solid transparent;
+      transition: background .3s ease, border-color .3s ease, backdrop-filter .3s ease;
+    }
+    .site-header.scrolled {
+      background: rgba(7, 11, 24, .82);
+      border-color: var(--line);
+      backdrop-filter: blur(18px);
+    }
+    .nav {
+      min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand {
+      text-decoration: none; display: inline-flex; align-items: center; gap: 11px;
+      font-weight: 800; letter-spacing: -.04em; font-size: 1rem;
+    }
+    .brand-mark {
+      width: 34px; height: 34px; display: grid; place-items: center;
+      border: 1px solid rgba(98,227,232,.55); border-radius: 10px;
+      color: var(--cyan); font: 500 .82rem "DM Mono", monospace;
+      background: rgba(98,227,232,.07); box-shadow: 0 0 24px rgba(98,227,232,.1);
+    }
+    .nav-links { display: flex; align-items: center; gap: 25px; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted); font-size: .8rem; font-weight: 700;
+      transition: color .2s ease;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+    .menu-toggle {
+      display: none; background: transparent; border: 1px solid var(--line);
+      color: var(--text); border-radius: 10px; padding: 9px 12px; cursor: pointer;
+    }
+ 
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 12px 18px; border-radius: 10px; text-decoration: none;
+      font-size: .84rem; font-weight: 800; border: 1px solid transparent;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary {
+      color: #06111e; background: linear-gradient(100deg, var(--cyan), #80baff);
+      box-shadow: 0 10px 30px rgba(85,167,255,.18);
+    }
+    .btn-ghost { border-color: rgba(148,177,221,.28); color: var(--text); background: rgba(255,255,255,.025); }
+    .btn-ghost:hover { border-color: var(--cyan); box-shadow: 0 10px 28px rgba(98,227,232,.08); }
+ 
+    /* Hero */
+    .hero {
+      min-height: 100svh; display: grid; align-items: center; position: relative;
+      padding: 130px 0 80px;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 70px;
+    }
+    .hero-copy { position: relative; z-index: 2; }
+    .hero h1 {
+      margin: 18px 0 18px; font-size: clamp(3rem, 7.4vw, 6.2rem);
+      line-height: .99; letter-spacing: -.075em; font-weight: 800;
+    }
+    .hero-role { font-size: clamp(1.05rem, 2vw, 1.35rem); color: #d5e3f8; font-weight: 700; }
+    .hero-description { max-width: 650px; color: var(--muted); font-size: 1rem; margin: 20px 0 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 34px; color: var(--muted); font: .72rem "DM Mono", monospace; }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+ 
+    .portrait-wrap { position: relative; width: min(100%, 390px); justify-self: end; }
+    .portrait-frame {
+      position: relative; aspect-ratio: 4 / 5; padding: 10px; border-radius: 28px;
+      border: 1px solid rgba(98,227,232,.32);
+      background: linear-gradient(145deg, rgba(85,167,255,.18), rgba(167,139,250,.08));
+      box-shadow: var(--shadow), 0 0 65px rgba(85,167,255,.1);
+      transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+    }
+    .portrait-frame::before {
+      content: ""; position: absolute; inset: 18px -13px -13px 18px; border: 1px solid rgba(85,167,255,.3);
+      border-radius: 26px; z-index: -1;
+    }
+    .portrait {
+      width: 100%; height: 100%; display: block; object-fit: cover; border-radius: 20px;
+      background: linear-gradient(145deg, #172b49, #0d1428);
+    }
+    .portrait-placeholder {
+      position: absolute; inset: 10px; border-radius: 20px; display: grid; place-items: center;
+      text-align: center; padding: 25px; color: #b7c9e4;
+      background: radial-gradient(circle at 50% 30%, rgba(98,227,232,.14), transparent 45%), #111d34;
+    }
+    .portrait-placeholder strong { display: block; font-size: 1.2rem; color: white; }
+    .portrait-placeholder small { display: block; margin-top: 8px; font: .7rem "DM Mono", monospace; }
+    .floating-card {
+      position: absolute; bottom: 28px; left: -48px; padding: 14px 17px; border-radius: 13px;
+      border: 1px solid var(--line); background: rgba(10,19,37,.9); backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+    .floating-card strong { display: block; font-size: .9rem; }
+    .floating-card span { color: var(--muted); font: .65rem "DM Mono", monospace; }
+ 
+    /* Sections */
+    section.content-section { padding: 105px 0; position: relative; }
+    .section-heading { max-width: 720px; margin-bottom: 42px; }
+    .section-heading h2 { margin: 9px 0 12px; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.1; letter-spacing: -.055em; }
+    .section-heading p { color: var(--muted); margin: 0; }
+    .section-topline { display: flex; align-items: center; gap: 13px; }
+    .section-topline::after { content: ""; width: 65px; height: 1px; background: linear-gradient(90deg, var(--cyan), transparent); }
+ 
+    /* About */
+    .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 42px; align-items: start; }
+    .about-copy { color: var(--muted); }
+    .about-copy p:first-child { margin-top: 0; }
+    .about-copy strong { color: var(--text); }
+    .focus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .focus-card, .panel, .project-card, .timeline-card, .achievement-card, .skill-group {
+      border: 1px solid var(--line); background: var(--panel); border-radius: var(--radius);
+      box-shadow: 0 12px 38px rgba(0,0,0,.12);
+    }
+    .focus-card { padding: 18px; min-height: 120px; }
+    .focus-icon { color: var(--cyan); font-size: 1.15rem; }
+    .focus-card h3 { margin: 9px 0 3px; font-size: .91rem; }
+    .focus-card p { margin: 0; color: var(--muted); font-size: .76rem; }
+ 
+    /* Experience */
+    .timeline { display: grid; gap: 17px; }
+    .timeline-card { padding: 25px 27px; position: relative; overflow: hidden; }
+    .timeline-card::before {
+      content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
+      background: linear-gradient(var(--cyan), var(--blue), transparent);
+    }
+    .timeline-top { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+    .timeline-card h3 { margin: 0; font-size: 1.12rem; }
+    .company { color: var(--cyan); font-weight: 700; margin-top: 3px; font-size: .87rem; }
+    .date { color: var(--muted); font: .7rem "DM Mono", monospace; white-space: nowrap; }
+    .timeline-card p { color: var(--muted); margin: 14px 0 10px; font-size: .88rem; }
+    .bullet-list { margin: 8px 0 0; padding-left: 18px; color: #c0cce0; font-size: .84rem; }
+    .bullet-list li { padding: 3px 0; }
+ 
+    /* Projects */
+    .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .project-card { overflow: hidden; transition: transform .3s ease, border-color .3s ease; }
+    .project-card:hover { transform: translateY(-7px); border-color: rgba(98,227,232,.42); }
+    .project-visual {
+      min-height: 180px; display: grid; place-items: center; position: relative; overflow: hidden;
+      background: radial-gradient(circle at 70% 30%, rgba(98,227,232,.17), transparent 35%),
+                  linear-gradient(135deg, #132747, #0b1428);
+      border-bottom: 1px solid var(--line);
+    }
+    .project-visual::before, .project-visual::after {
+      content: ""; position: absolute; border: 1px solid rgba(98,227,232,.19); border-radius: 50%;
+      width: 230px; height: 230px; transform: rotateX(65deg) rotateZ(-25deg);
+    }
+    .project-visual::after { width: 160px; height: 160px; border-color: rgba(85,167,255,.25); }
+    .project-symbol { z-index: 1; font-size: 2.7rem; color: var(--cyan); text-shadow: 0 0 28px rgba(98,227,232,.45); }
+    .project-content { padding: 23px; }
+    .project-content h3 { margin: 10px 0 8px; font-size: 1.1rem; }
+    .pro
+ 
